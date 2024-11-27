@@ -21,7 +21,7 @@ export default function Listing({ items = [] }: Args) {
         <div className="item-list">
             {
                 items.map((item) => {
-                    let image = item.MainImage["url_570xN"];
+                    const image: string = item.MainImage["url_570xN"];
                     return (
                         <div className="item" key={item.listing_id}>
                             <div className="item-image">
